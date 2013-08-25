@@ -1,0 +1,15 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="1,1" id="srcline1"> 1</a></span><span class="line"><span class="comment">%This file runs through the step function for each time period</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">%It recieves two structs, (vars &amp; params) as inputs and outputs a vars struct</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,3" id="srcline3"> 3</a></span><span class="line"><span class="comment">%Written by Matt Gee</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">%Last updated August 20th, 2012</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,5" id="srcline5"> 5</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,6" id="srcline6"> 6</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T1U3">vars</span> = DICE2007Run(<span class="mxinfo" id="T1:U2"><span class="mxinfo" id="T1:U3"><span class="var type1" id="S2T1U6">vars</span></span></span>, <span class="var type1" id="S3T4U7">param</span>) <span class="comment">%#codegen</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,7" id="srcline7"> 7</a></span><span class="line">    <span class="comment">% Step through standard run</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,8" id="srcline8"> 8</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,9" id="srcline9"> 9</a></span><span class="line">    <span class="keyword">for</span> <span class="var type1" id="S4T2U10">t</span> = <span class="mxinfo" id="T2:U7">1</span>:<span class="mxinfo" id="T2:U8"><span class="var type1" id="S3T4U14">param</span>.tmax</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,10" id="srcline10">10</a></span><span class="line">      <span class="mxinfo" id="T1:U10"><span class="var type1" id="S2T1U18">vars</span> = <span class="mxinfo" id="T1:U12"><span class="fcn" id="F57N3:B20">DICE2007Step</span>(<span class="var type1" id="S2T1U21">vars</span>, <span class="var type1" id="S3T4U22">param</span>, <span class="var type1" id="S4T2U23">t</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,11" id="srcline11">11</a></span><span class="line">    <span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,12" id="srcline12">12</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,13" id="srcline13">13</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
